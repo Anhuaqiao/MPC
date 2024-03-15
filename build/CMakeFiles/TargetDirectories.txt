@@ -1,0 +1,3 @@
+/home/xiaohan/Work/MPC/build/CMakeFiles/mpc.dir
+/home/xiaohan/Work/MPC/build/CMakeFiles/edit_cache.dir
+/home/xiaohan/Work/MPC/build/CMakeFiles/rebuild_cache.dir

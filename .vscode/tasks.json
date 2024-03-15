@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        // 这里指定tasks 的运行目录，默认是${workspaceRoot}，也就是.vscode/..
+        "cwd": "${workspaceRoot}"
+    },
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cd build&&cmake .. && make -j8",
+        },
+        {
+            "label": "build_debug",
+            "type": "shell",
+            "command": "cd build&&cmake -DCMAKE_BUILD_TYPE=Debug .. && make -j8",
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make clean"
+        },
+        {
+            "label": "void",
+            "type": "shell",
+            "command": "echo"
+        }
+    ]
+}
