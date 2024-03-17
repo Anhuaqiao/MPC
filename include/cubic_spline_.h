@@ -52,7 +52,9 @@ cubic_spline_::cubic_spline_(Vec_d x_, Vec_d y_):x(x_), y(y_), nx(x_.size()),h(v
     Zero_2row.resize(2,Identity.cols()+3*Zeros.cols());
     Zero_2row.setZero();
     Zero_2row(0,3*nf) = 1.0;
-    Zero_2row(1,Identity.cols()+3*Zeros.cols()-1) = 1.0;
+    Zero_2row(0,3*nf+1) = -1.0;
+    Zero_2row(1,4*nf-1) = 1.0;
+    Zero_2row(1,4*nf-2) = -1.0;
 
     Eigen::MatrixXd A1(Identity.rows(), Identity.cols()+3*Zeros.cols());
     A1<<Identity,Zeros,Zeros,Zeros;
