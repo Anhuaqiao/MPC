@@ -378,4 +378,478 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: /home/xiaohan/Work/MPC/src/MPC.cpp \
  /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/local/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/xiaohan/Work/MPC/./include/matplotlibcpp.h \
+ /usr/include/python3.10/Python.h /usr/include/python3.10/patchlevel.h \
+ /usr/include/python3.10/pyconfig.h \
+ /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
+ /usr/include/python3.10/pymacconfig.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/python3.10/pyport.h \
+ /usr/include/inttypes.h /usr/include/c++/11/math.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/python3.10/exports.h /usr/include/python3.10/pymacro.h \
+ /usr/include/python3.10/pymath.h /usr/include/python3.10/pymem.h \
+ /usr/include/python3.10/cpython/pymem.h /usr/include/python3.10/object.h \
+ /usr/include/python3.10/cpython/object.h \
+ /usr/include/python3.10/objimpl.h \
+ /usr/include/python3.10/cpython/objimpl.h \
+ /usr/include/python3.10/typeslots.h /usr/include/python3.10/pyhash.h \
+ /usr/include/python3.10/cpython/pydebug.h \
+ /usr/include/python3.10/bytearrayobject.h \
+ /usr/include/python3.10/cpython/bytearrayobject.h \
+ /usr/include/python3.10/bytesobject.h \
+ /usr/include/python3.10/cpython/bytesobject.h \
+ /usr/include/python3.10/unicodeobject.h \
+ /usr/include/python3.10/cpython/unicodeobject.h \
+ /usr/include/python3.10/longobject.h \
+ /usr/include/python3.10/longintrepr.h \
+ /usr/include/python3.10/boolobject.h \
+ /usr/include/python3.10/floatobject.h \
+ /usr/include/python3.10/complexobject.h \
+ /usr/include/python3.10/rangeobject.h \
+ /usr/include/python3.10/memoryobject.h \
+ /usr/include/python3.10/tupleobject.h \
+ /usr/include/python3.10/cpython/tupleobject.h \
+ /usr/include/python3.10/listobject.h \
+ /usr/include/python3.10/cpython/listobject.h \
+ /usr/include/python3.10/dictobject.h \
+ /usr/include/python3.10/cpython/dictobject.h \
+ /usr/include/python3.10/cpython/odictobject.h \
+ /usr/include/python3.10/enumobject.h /usr/include/python3.10/setobject.h \
+ /usr/include/python3.10/methodobject.h \
+ /usr/include/python3.10/cpython/methodobject.h \
+ /usr/include/python3.10/moduleobject.h \
+ /usr/include/python3.10/funcobject.h \
+ /usr/include/python3.10/classobject.h \
+ /usr/include/python3.10/fileobject.h \
+ /usr/include/python3.10/cpython/fileobject.h \
+ /usr/include/python3.10/pycapsule.h /usr/include/python3.10/code.h \
+ /usr/include/python3.10/cpython/code.h /usr/include/python3.10/pyframe.h \
+ /usr/include/python3.10/traceback.h \
+ /usr/include/python3.10/cpython/traceback.h \
+ /usr/include/python3.10/sliceobject.h \
+ /usr/include/python3.10/cellobject.h \
+ /usr/include/python3.10/iterobject.h \
+ /usr/include/python3.10/cpython/initconfig.h \
+ /usr/include/python3.10/genobject.h /usr/include/python3.10/pystate.h \
+ /usr/include/python3.10/cpython/pystate.h \
+ /usr/include/python3.10/abstract.h \
+ /usr/include/python3.10/cpython/abstract.h \
+ /usr/include/python3.10/descrobject.h \
+ /usr/include/python3.10/genericaliasobject.h \
+ /usr/include/python3.10/warnings.h \
+ /usr/include/python3.10/weakrefobject.h \
+ /usr/include/python3.10/structseq.h \
+ /usr/include/python3.10/namespaceobject.h \
+ /usr/include/python3.10/cpython/picklebufobject.h \
+ /usr/include/python3.10/cpython/pytime.h \
+ /usr/include/python3.10/codecs.h /usr/include/python3.10/pyerrors.h \
+ /usr/include/python3.10/cpython/pyerrors.h \
+ /usr/include/python3.10/pythread.h /usr/include/python3.10/context.h \
+ /usr/include/python3.10/modsupport.h /usr/include/python3.10/compile.h \
+ /usr/include/python3.10/cpython/compile.h \
+ /usr/include/python3.10/pythonrun.h \
+ /usr/include/python3.10/cpython/pythonrun.h \
+ /usr/include/python3.10/pylifecycle.h \
+ /usr/include/python3.10/cpython/pylifecycle.h \
+ /usr/include/python3.10/ceval.h /usr/include/python3.10/cpython/ceval.h \
+ /usr/include/python3.10/sysmodule.h \
+ /usr/include/python3.10/cpython/sysmodule.h \
+ /usr/include/python3.10/osmodule.h /usr/include/python3.10/intrcheck.h \
+ /usr/include/python3.10/import.h \
+ /usr/include/python3.10/cpython/import.h \
+ /usr/include/python3.10/bltinmodule.h /usr/include/python3.10/eval.h \
+ /usr/include/python3.10/cpython/pyctype.h \
+ /usr/include/python3.10/pystrtod.h /usr/include/python3.10/pystrcmp.h \
+ /usr/include/python3.10/fileutils.h \
+ /usr/include/python3.10/cpython/fileutils.h \
+ /usr/include/python3.10/cpython/pyfpe.h \
+ /usr/include/python3.10/tracemalloc.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/ndarrayobject.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/ndarraytypes.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/npy_common.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/numpyconfig.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/_numpyconfig.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/npy_endian.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/npy_cpu.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/utils.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/__multiarray_api.h \
+ /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/npy_interrupt.h \
+ /usr/include/setjmp.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+ /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+ /usr/include/cppad/cppad.hpp /usr/include/cppad/base_require.hpp \
+ /usr/include/cppad/utility/error_handler.hpp \
+ /usr/include/cppad/configure.hpp \
+ /usr/include/cppad/local/set_get_in_parallel.hpp \
+ /usr/include/cppad/local/define.hpp \
+ /usr/include/cppad/core/cppad_assert.hpp \
+ /usr/include/cppad/local/declare_ad.hpp \
+ /usr/include/cppad/core/base_cond_exp.hpp \
+ /usr/include/cppad/core/base_std_math.hpp \
+ /usr/include/cppad/core/base_limits.hpp \
+ /usr/include/cppad/core/base_to_string.hpp \
+ /usr/include/cppad/utility/to_string.hpp /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/cppad/core/base_hash.hpp \
+ /usr/include/cppad/core/numeric_limits.hpp \
+ /usr/include/cppad/core/epsilon.hpp \
+ /usr/include/cppad/core/base_float.hpp \
+ /usr/include/cppad/core/base_double.hpp \
+ /usr/include/cppad/core/base_complex.hpp \
+ /usr/include/cppad/utility/thread_alloc.hpp /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/cppad/core/zdouble.hpp /usr/include/cppad/utility/nan.hpp \
+ /usr/include/cppad/utility.hpp \
+ /usr/include/cppad/utility/check_numeric_type.hpp \
+ /usr/include/cppad/utility/check_simple_vector.hpp \
+ /usr/include/cppad/utility/elapsed_seconds.hpp \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/cppad/utility/index_sort.hpp \
+ /usr/include/cppad/utility/lu_factor.hpp \
+ /usr/include/cppad/utility/lu_invert.hpp \
+ /usr/include/cppad/utility/lu_solve.hpp \
+ /usr/include/cppad/utility/memory_leak.hpp \
+ /usr/include/cppad/utility/omp_alloc.hpp \
+ /usr/include/cppad/utility/track_new_del.hpp \
+ /usr/include/cppad/utility/near_equal.hpp \
+ /usr/include/cppad/utility/ode_err_control.hpp \
+ /usr/include/cppad/utility/ode_gear_control.hpp \
+ /usr/include/cppad/utility/ode_gear.hpp \
+ /usr/include/cppad/utility/vector.hpp \
+ /usr/include/cppad/local/utility/cppad_vector_itr.hpp \
+ /usr/include/cppad/utility/vector_bool.hpp \
+ /usr/include/cppad/local/utility/vector_bool.hpp \
+ /usr/include/cppad/utility/poly.hpp \
+ /usr/include/cppad/utility/pow_int.hpp \
+ /usr/include/cppad/utility/romberg_mul.hpp \
+ /usr/include/cppad/utility/romberg_one.hpp \
+ /usr/include/cppad/utility/rosen_34.hpp \
+ /usr/include/cppad/utility/runge_45.hpp \
+ /usr/include/cppad/utility/set_union.hpp /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/cppad/utility/sparse_rc.hpp \
+ /usr/include/cppad/utility/sparse_rcv.hpp \
+ /usr/include/cppad/utility/speed_test.hpp \
+ /usr/include/cppad/utility/test_boolofvoid.hpp \
+ /usr/include/cppad/utility/time_test.hpp \
+ /usr/include/cppad/core/testvector.hpp \
+ /usr/include/cppad/core/test_vector.hpp /usr/include/cppad/core/ad.hpp \
+ /usr/include/cppad/core/ordered.hpp \
+ /usr/include/cppad/core/identical.hpp \
+ /usr/include/cppad/local/op_code_dyn.hpp \
+ /usr/include/cppad/local/op_code_var.hpp \
+ /usr/include/cppad/local/atomic_index.hpp \
+ /usr/include/cppad/local/pod_vector.hpp \
+ /usr/include/cppad/local/is_pod.hpp /usr/include/cppad/core/ad_type.hpp \
+ /usr/include/cppad/local/record/recorder.hpp \
+ /usr/include/cppad/core/hash_code.hpp \
+ /usr/include/cppad/local/hash_code.hpp \
+ /usr/include/cppad/local/record/put_var_vecad.hpp \
+ /usr/include/cppad/local/record/put_dyn_atomic.hpp \
+ /usr/include/cppad/local/record/put_var_atomic.hpp \
+ /usr/include/cppad/local/record/cond_exp.hpp \
+ /usr/include/cppad/local/record/comp_op.hpp \
+ /usr/include/cppad/local/play/player.hpp \
+ /usr/include/cppad/local/play/addr_enum.hpp \
+ /usr/include/cppad/local/play/sequential_iterator.hpp \
+ /usr/include/cppad/local/play/subgraph_iterator.hpp \
+ /usr/include/cppad/local/play/random_iterator.hpp \
+ /usr/include/cppad/local/play/random_setup.hpp \
+ /usr/include/cppad/local/atom_state.hpp \
+ /usr/include/cppad/local/ad_tape.hpp \
+ /usr/include/cppad/core/tape_link.hpp \
+ /usr/include/cppad/core/user_ad.hpp /usr/include/cppad/core/ad_ctor.hpp \
+ /usr/include/cppad/core/ad_assign.hpp \
+ /usr/include/cppad/core/convert.hpp /usr/include/cppad/core/value.hpp \
+ /usr/include/cppad/core/integer.hpp \
+ /usr/include/cppad/core/ad_to_string.hpp \
+ /usr/include/cppad/core/ad_io.hpp /usr/include/cppad/core/print_for.hpp \
+ /usr/include/cppad/core/var2par.hpp \
+ /usr/include/cppad/core/vec_ad/vec_ad.hpp \
+ /usr/include/cppad/core/ad_valued.hpp \
+ /usr/include/cppad/core/arithmetic.hpp \
+ /usr/include/cppad/core/unary_plus.hpp \
+ /usr/include/cppad/core/unary_minus.hpp \
+ /usr/include/cppad/core/ad_binary.hpp /usr/include/cppad/core/add.hpp \
+ /usr/include/cppad/core/sub.hpp /usr/include/cppad/core/mul.hpp \
+ /usr/include/cppad/core/div.hpp \
+ /usr/include/cppad/core/compound_assign.hpp \
+ /usr/include/cppad/core/add_eq.hpp /usr/include/cppad/core/sub_eq.hpp \
+ /usr/include/cppad/core/mul_eq.hpp /usr/include/cppad/core/div_eq.hpp \
+ /usr/include/cppad/core/standard_math.hpp \
+ /usr/include/cppad/core/abs.hpp /usr/include/cppad/core/sign.hpp \
+ /usr/include/cppad/core/atan2.hpp /usr/include/cppad/core/pow.hpp \
+ /usr/include/cppad/core/azmul.hpp /usr/include/cppad/core/cond_exp.hpp \
+ /usr/include/cppad/core/discrete/discrete.hpp \
+ /usr/include/cppad/core/atomic/atomic_three.hpp \
+ /usr/include/cppad/core/atomic/three_ctor.hpp \
+ /usr/include/cppad/core/atomic/three_afun.hpp \
+ /usr/include/cppad/core/atomic/three_for_type.hpp \
+ /usr/include/cppad/core/atomic/three_rev_depend.hpp \
+ /usr/include/cppad/core/atomic/three_forward.hpp \
+ /usr/include/cppad/core/atomic/three_reverse.hpp \
+ /usr/include/cppad/core/atomic/three_jac_sparsity.hpp \
+ /usr/include/cppad/core/atomic/three_hes_sparsity.hpp \
+ /usr/include/cppad/core/chkpoint_two/chkpoint_two.hpp \
+ /usr/include/cppad/core/chkpoint_two/ctor.hpp \
+ /usr/include/cppad/core/chkpoint_two/dynamic.hpp \
+ /usr/include/cppad/core/chkpoint_two/for_type.hpp \
+ /usr/include/cppad/core/chkpoint_two/forward.hpp \
+ /usr/include/cppad/core/chkpoint_two/reverse.hpp \
+ /usr/include/cppad/core/chkpoint_two/jac_sparsity.hpp \
+ /usr/include/cppad/core/chkpoint_two/hes_sparsity.hpp \
+ /usr/include/cppad/core/chkpoint_two/rev_depend.hpp \
+ /usr/include/cppad/core/atomic/atomic_two.hpp \
+ /usr/include/cppad/local/sparse/internal.hpp \
+ /usr/include/cppad/local/sparse/pack_setvec.hpp \
+ /usr/include/cppad/local/sparse/list_setvec.hpp \
+ /usr/include/cppad/local/sparse/svec_setvec.hpp /usr/include/c++/11/list \
+ /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
+ /usr/include/cppad/core/atomic/two_ctor.hpp \
+ /usr/include/cppad/core/atomic/two_option.hpp \
+ /usr/include/cppad/core/atomic/two_afun.hpp \
+ /usr/include/cppad/core/atomic/two_forward.hpp \
+ /usr/include/cppad/core/atomic/two_reverse.hpp \
+ /usr/include/cppad/core/atomic/two_for_sparse_jac.hpp \
+ /usr/include/cppad/core/atomic/two_rev_sparse_jac.hpp \
+ /usr/include/cppad/core/atomic/two_for_sparse_hes.hpp \
+ /usr/include/cppad/core/atomic/two_rev_sparse_hes.hpp \
+ /usr/include/cppad/core/atomic/two_rev_depend.hpp \
+ /usr/include/cppad/core/atomic/two_clear.hpp \
+ /usr/include/cppad/core/atomic/atomic_one.hpp \
+ /usr/include/cppad/core/chkpoint_one/chkpoint_one.hpp \
+ /usr/include/cppad/core/chkpoint_one/ctor.hpp \
+ /usr/include/cppad/core/chkpoint_one/reverse.hpp \
+ /usr/include/cppad/core/chkpoint_one/forward.hpp \
+ /usr/include/cppad/core/chkpoint_one/rev_sparse_hes.hpp \
+ /usr/include/cppad/core/chkpoint_one/rev_sparse_jac.hpp \
+ /usr/include/cppad/core/chkpoint_one/for_sparse_jac.hpp \
+ /usr/include/cppad/core/chkpoint_one/set_hes_sparse_bool.hpp \
+ /usr/include/cppad/core/chkpoint_one/set_hes_sparse_set.hpp \
+ /usr/include/cppad/core/chkpoint_one/set_jac_sparse_bool.hpp \
+ /usr/include/cppad/core/chkpoint_one/set_jac_sparse_set.hpp \
+ /usr/include/cppad/core/bool_valued.hpp \
+ /usr/include/cppad/core/compare.hpp \
+ /usr/include/cppad/core/near_equal_ext.hpp \
+ /usr/include/cppad/core/bool_fun.hpp \
+ /usr/include/cppad/core/con_dyn_var.hpp \
+ /usr/include/cppad/core/equal_op_seq.hpp /usr/include/cppad/local/op.hpp \
+ /usr/include/cppad/core/std_math_11.hpp \
+ /usr/include/cppad/local/abs_op.hpp /usr/include/cppad/local/add_op.hpp \
+ /usr/include/cppad/local/acos_op.hpp \
+ /usr/include/cppad/local/acosh_op.hpp \
+ /usr/include/cppad/local/asin_op.hpp \
+ /usr/include/cppad/local/asinh_op.hpp \
+ /usr/include/cppad/local/atan_op.hpp \
+ /usr/include/cppad/local/atanh_op.hpp \
+ /usr/include/cppad/local/comp_op.hpp \
+ /usr/include/cppad/local/cond_op.hpp /usr/include/cppad/local/cos_op.hpp \
+ /usr/include/cppad/local/cosh_op.hpp \
+ /usr/include/cppad/local/cskip_op.hpp \
+ /usr/include/cppad/local/csum_op.hpp \
+ /usr/include/cppad/local/discrete_op.hpp \
+ /usr/include/cppad/local/div_op.hpp /usr/include/cppad/local/erf_op.hpp \
+ /usr/include/cppad/local/mul_op.hpp /usr/include/cppad/local/sub_op.hpp \
+ /usr/include/cppad/local/exp_op.hpp \
+ /usr/include/cppad/local/expm1_op.hpp \
+ /usr/include/cppad/local/load_op.hpp /usr/include/cppad/local/log_op.hpp \
+ /usr/include/cppad/local/log1p_op.hpp \
+ /usr/include/cppad/local/parameter_op.hpp \
+ /usr/include/cppad/local/pow_op.hpp \
+ /usr/include/cppad/local/print_op.hpp \
+ /usr/include/cppad/local/sign_op.hpp /usr/include/cppad/local/sin_op.hpp \
+ /usr/include/cppad/local/sinh_op.hpp \
+ /usr/include/cppad/local/sqrt_op.hpp \
+ /usr/include/cppad/local/sparse/binary_op.hpp \
+ /usr/include/cppad/local/sparse/unary_op.hpp \
+ /usr/include/cppad/local/store_op.hpp \
+ /usr/include/cppad/local/tan_op.hpp /usr/include/cppad/local/tanh_op.hpp \
+ /usr/include/cppad/local/zmul_op.hpp /usr/include/cppad/core/ad_fun.hpp \
+ /usr/include/cppad/core/graph/cpp_graph.hpp \
+ /usr/include/cppad/local/graph/cpp_graph_op.hpp \
+ /usr/include/cppad/core/graph/graph_op_enum.hpp \
+ /usr/include/cppad/local/graph/cpp_graph_itr.hpp \
+ /usr/include/cppad/local/subgraph/info.hpp \
+ /usr/include/cppad/local/subgraph/arg_variable.hpp \
+ /usr/include/cppad/local/subgraph/init_rev.hpp \
+ /usr/include/cppad/local/subgraph/get_rev.hpp \
+ /usr/include/cppad/local/sweep/forward0.hpp \
+ /usr/include/cppad/local/play/atom_op_info.hpp \
+ /usr/include/cppad/local/sweep/call_atomic.hpp \
+ /usr/include/cppad/local/sweep/forward1.hpp \
+ /usr/include/cppad/local/sweep/forward2.hpp \
+ /usr/include/cppad/local/sweep/reverse.hpp \
+ /usr/include/cppad/local/sweep/for_jac.hpp \
+ /usr/include/cppad/local/sweep/rev_jac.hpp \
+ /usr/include/cppad/local/sweep/rev_hes.hpp \
+ /usr/include/cppad/local/sweep/for_hes.hpp \
+ /usr/include/cppad/core/graph/from_graph.hpp \
+ /usr/include/cppad/core/graph/to_graph.hpp \
+ /usr/include/cppad/core/parallel_ad.hpp \
+ /usr/include/cppad/local/std_set.hpp \
+ /usr/include/cppad/core/independent/independent.hpp \
+ /usr/include/cppad/local/independent.hpp \
+ /usr/include/cppad/core/dependent.hpp \
+ /usr/include/cppad/core/fun_construct.hpp \
+ /usr/include/cppad/core/base2ad.hpp \
+ /usr/include/cppad/core/abort_recording.hpp \
+ /usr/include/cppad/core/fun_eval.hpp \
+ /usr/include/cppad/core/new_dynamic.hpp \
+ /usr/include/cppad/local/sweep/dynamic.hpp \
+ /usr/include/cppad/core/forward/forward.hpp \
+ /usr/include/cppad/core/capacity_order.hpp \
+ /usr/include/cppad/core/num_skip.hpp \
+ /usr/include/cppad/core/check_for_nan.hpp /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/cppad/core/reverse.hpp \
+ /usr/include/cppad/core/sparse.hpp \
+ /usr/include/cppad/core/for_jac_sparsity.hpp \
+ /usr/include/cppad/core/rev_jac_sparsity.hpp \
+ /usr/include/cppad/core/for_hes_sparsity.hpp \
+ /usr/include/cppad/core/rev_hes_sparsity.hpp \
+ /usr/include/cppad/core/for_sparse_jac.hpp \
+ /usr/include/cppad/core/rev_sparse_jac.hpp \
+ /usr/include/cppad/core/for_sparse_hes.hpp \
+ /usr/include/cppad/core/rev_sparse_hes.hpp \
+ /usr/include/cppad/core/sparse_jac.hpp \
+ /usr/include/cppad/local/color_general.hpp \
+ /usr/include/cppad/local/cppad_colpack.hpp \
+ /usr/include/cppad/core/sparse_hes.hpp \
+ /usr/include/cppad/local/color_symmetric.hpp \
+ /usr/include/cppad/core/sparse_jacobian.hpp \
+ /usr/include/cppad/core/sparse_hessian.hpp \
+ /usr/include/cppad/core/subgraph_sparsity.hpp \
+ /usr/include/cppad/local/subgraph/sparsity.hpp \
+ /usr/include/cppad/local/subgraph/entire_call.hpp \
+ /usr/include/cppad/core/subgraph_reverse.hpp \
+ /usr/include/cppad/core/subgraph_jac_rev.hpp \
+ /usr/include/cppad/core/drivers.hpp /usr/include/cppad/core/jacobian.hpp \
+ /usr/include/cppad/core/hessian.hpp /usr/include/cppad/core/for_one.hpp \
+ /usr/include/cppad/core/rev_one.hpp /usr/include/cppad/core/for_two.hpp \
+ /usr/include/cppad/core/rev_two.hpp \
+ /usr/include/cppad/core/fun_check.hpp \
+ /usr/include/cppad/core/omp_max_thread.hpp \
+ /usr/include/cppad/core/optimize.hpp \
+ /usr/include/cppad/local/optimize/optimize_run.hpp \
+ /usr/include/c++/11/stack /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_stack.h \
+ /usr/include/cppad/local/optimize/get_op_usage.hpp \
+ /usr/include/cppad/local/optimize/cexp_info.hpp \
+ /usr/include/cppad/local/optimize/usage.hpp \
+ /usr/include/cppad/local/optimize/get_par_usage.hpp \
+ /usr/include/cppad/local/optimize/get_dyn_previous.hpp \
+ /usr/include/cppad/local/optimize/match_op.hpp \
+ /usr/include/cppad/local/optimize/hash_code.hpp \
+ /usr/include/cppad/local/optimize/get_op_previous.hpp \
+ /usr/include/cppad/local/optimize/get_cexp_info.hpp \
+ /usr/include/cppad/local/optimize/size_pair.hpp \
+ /usr/include/cppad/local/optimize/csum_stacks.hpp \
+ /usr/include/cppad/local/optimize/csum_op_info.hpp \
+ /usr/include/cppad/local/optimize/record_pv.hpp \
+ /usr/include/cppad/local/optimize/record_vp.hpp \
+ /usr/include/cppad/local/optimize/record_vv.hpp \
+ /usr/include/cppad/local/optimize/record_csum.hpp \
+ /usr/include/cppad/core/abs_normal_fun.hpp \
+ /usr/include/cppad/core/graph/from_json.hpp \
+ /usr/include/cppad/local/graph/json_parser.hpp \
+ /usr/include/cppad/core/graph/to_json.hpp \
+ /usr/include/cppad/local/graph/json_writer.hpp \
+ /usr/include/cppad/core/lu_ratio.hpp \
+ /usr/include/cppad/core/bender_quad.hpp \
+ /usr/include/cppad/core/opt_val_hes.hpp \
+ /usr/include/cppad/local/graph/json_lexer.hpp \
+ /usr/include/cppad/core/undef.hpp /usr/include/cppad/ipopt/solve.hpp \
+ /usr/include/cppad/ipopt/solve_callback.hpp \
+ /usr/local/include/coin-or/IpIpoptApplication.hpp \
+ /usr/local/include/coin-or/IpJournalist.hpp \
+ /usr/local/include/coin-or/IpoptConfig.h \
+ /usr/local/include/coin-or/IpTypes.hpp \
+ /usr/local/include/coin-or/IpTypes.h \
+ /usr/local/include/coin-or/IpReferenced.hpp \
+ /usr/local/include/coin-or/IpDebug.hpp \
+ /usr/local/include/coin-or/IpSmartPtr.hpp /usr/include/c++/11/cstdarg \
+ /usr/local/include/coin-or/IpTNLP.hpp \
+ /usr/local/include/coin-or/IpUtils.hpp \
+ /usr/local/include/coin-or/IpException.hpp \
+ /usr/local/include/coin-or/IpAlgTypes.hpp \
+ /usr/local/include/coin-or/IpReturnCodes.hpp \
+ /usr/local/include/coin-or/IpReturnCodes_inc.h \
+ /usr/local/include/coin-or/IpNLP.hpp \
+ /usr/local/include/coin-or/IpVector.hpp \
+ /usr/local/include/coin-or/IpTaggedObject.hpp \
+ /usr/local/include/coin-or/IpObserver.hpp \
+ /usr/local/include/coin-or/IpCachedResults.hpp \
+ /usr/local/include/coin-or/IpMatrix.hpp \
+ /usr/local/include/coin-or/IpSymMatrix.hpp \
+ /usr/local/include/coin-or/IpOptionsList.hpp \
+ /usr/local/include/coin-or/IpRegOptions.hpp \
+ /usr/local/include/coin-or/IpTNLP.hpp \
+ /usr/include/cppad/ipopt/solve_result.hpp

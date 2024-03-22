@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/eigen3 -I/home/xiaohan/Work/MPC/./include -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/usr/local/include/eigen3 -I/home/xiaohan/Work/MPC/./include -isystem /usr/include/opencv4 -isystem /usr/include/python3.10 -isystem /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include
 
 CXX_FLAGS = -g -std=gnu++11
 

@@ -4,6 +4,7 @@
 
 typedef std::vector<double> Vec_d;
 typedef std::vector<float> Vec_f;
+typedef std::array<double, 2> Poi_d;
 
 template <typename T>
 T vec_diff(T x){
@@ -13,6 +14,17 @@ T vec_diff(T x){
     }
     return h;
 }
+
+template <typename T>
+T cumsum(T x){
+    T h{0};
+    for(size_t i=0;i<x.size();i++){
+        h.push_back(h[i]+x[i]);
+    }
+
+    return h;
+}
+
 
 class cubic_spline_
 {
@@ -31,6 +43,43 @@ public:
     cubic_spline_(){};
     cubic_spline_(Vec_d x_, Vec_d y_);
     ~cubic_spline_();
+    double calc(double t){
+        if(t>x.back() || t<x.front()){
+            std::cout << "received value is out of th predefined range" << std::endl;
+        }
+        int ind = bisect(t, 0, nf);
+        double dx = t - x[ind];
+        return a[ind] + dx*b[ind] + dx*dx*c[ind] + dx*dx*dx*d[ind];
+    }
+    double calc_d(double t){
+        if(t>x.back() || t<x.front()){
+            std::cout << "received value is out of th predefined range" << std::endl;
+        }
+        int ind = bisect(t, 0, nf);
+        double dx = t - x[ind];
+        return b[ind] + 2*dx*c[ind] + 3*dx*dx*d[ind];
+    }
+
+    double calc_dd(double t){
+        if(t>x.back() || t<x.front()){
+            std::cout << "received value is out of th predefined range" << std::endl;
+        }
+        int ind = bisect(t, 0, nf);
+        double dx = t - x[ind];
+        return 2*c[ind] + 6*dx*d[ind];
+    }
+private:
+
+    int bisect(double t, int start, int end){
+        int mid = (end+start)/2;
+        if(t == x[mid]||(end-start)<=1){
+            return mid;
+        }else if(t>x[mid]){
+            return bisect(t, mid, end);
+        }else if(t<x[mid]){
+            return bisect(t, start, mid);
+        }
+    }
 };
 
 cubic_spline_::cubic_spline_(Vec_d x_, Vec_d y_):x(x_), y(y_), nx(x_.size()),h(vec_diff(x_)){
@@ -51,10 +100,13 @@ cubic_spline_::cubic_spline_(Vec_d x_, Vec_d y_):x(x_), y(y_), nx(x_.size()),h(v
     Eigen::MatrixXd Zero_2row;
     Zero_2row.resize(2,Identity.cols()+3*Zeros.cols());
     Zero_2row.setZero();
-    Zero_2row(0,3*nf) = 1.0;
-    Zero_2row(0,3*nf+1) = -1.0;
-    Zero_2row(1,4*nf-1) = 1.0;
-    Zero_2row(1,4*nf-2) = -1.0;
+    // Zero_2row(0,3*nf) = 1.0;
+    // Zero_2row(0,3*nf+1) = -1.0;
+    // Zero_2row(1,4*nf-1) = 1.0;
+    // Zero_2row(1,4*nf-2) = -1.0; //not a knot spline
+
+    Zero_2row(0,2*nf) = 1;
+    Zero_2row(0,3*nf-1) = 1;
 
     Eigen::MatrixXd A1(Identity.rows(), Identity.cols()+3*Zeros.cols());
     A1<<Identity,Zeros,Zeros,Zeros;
@@ -87,11 +139,14 @@ cubic_spline_::cubic_spline_(Vec_d x_, Vec_d y_):x(x_), y(y_), nx(x_.size()),h(v
         b2,
         b3,
         b4;
-    Eigen::VectorXd c_eigen = A.colPivHouseholderQr().solve(B);
-    double * c_pointer = c_eigen.data();
+    Eigen::VectorXd abcd = A.colPivHouseholderQr().solve(B);
+    double * abcd_pointer = abcd.data();
     //Eigen::Map<Eigen::VectorXf>(c, c_eigen.rows(), 1) = c_eigen;
-    c.assign(c_pointer, c_pointer+c_eigen.rows());
-
+    a.assign(abcd_pointer, abcd_pointer+nf);
+    b.assign(abcd_pointer+nf, abcd_pointer+2*nf);
+    c.assign(abcd_pointer+2*nf, abcd_pointer+3*nf);
+    d.assign(abcd_pointer+3*nf, abcd_pointer+4*nf);
+    std::cout<<b.size()<<std::endl;
     for(auto const tmp:c){
       std::cout<< tmp <<std::endl;
     }
@@ -104,3 +159,49 @@ cubic_spline_::~cubic_spline_()
 {
 
 }
+
+class cubic_spline_2D{
+public:
+    cubic_spline_ sx;
+    cubic_spline_ sy;
+    Vec_d s;
+
+    cubic_spline_2D(Vec_d x, Vec_d y ){
+        s = calc_s(x, y);
+        sx = cubic_spline_(s,x);
+        sy = cubic_spline_(s,y);
+    }
+    Poi_d calc_position(double s_t){
+        double x = sx.calc(s_t);
+        double y = sy.calc(s_t);
+
+        return {{x,y}};
+    }
+    double calc_yaw(double s_t){
+        double dx = sx.calc_d(s_t);
+        double dy = sy.calc_d(s_t);
+        return atan2(dy,dx);
+    }
+    double calc_curvature(float s_t){
+    double dx = sx.calc_d(s_t);
+    double ddx = sx.calc_dd(s_t);
+    double dy = sy.calc_d(s_t);
+    double ddy = sy.calc_dd(s_t);
+    return (ddy * dx - ddx * dy)/(dx * dx + dy * dy);
+  };
+
+private:
+    Vec_d calc_s(Vec_d x, Vec_d y){
+        Vec_d ds;
+        Vec_d out_s;
+        Vec_d dx = vec_diff(x);
+        Vec_d dy = vec_diff(y);
+
+        for(size_t i = 0; i<dx.size();i++){
+            ds.push_back(std::sqrt(dx[i]*dx[i] + dy[i]*dy[i]));
+        }
+        out_s = cumsum(ds);
+        return out_s;
+    };
+
+};

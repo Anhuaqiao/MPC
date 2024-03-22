@@ -19,5 +19,20 @@ include_directories(./include)
 include_directories(/usr/local/include)
 link_directories(/usr/local/lib)
 
+
+set(Python3_EXECUTABLE /usr/bin/python3.10)
+
+# Find Python3 interpreter and development components
+find_package(Python3 COMPONENTS Interpreter Development NumPy REQUIRED)
+
 add_executable(mpc src/MPC.cpp)
 target_link_libraries(mpc ${OpenCV_LIBS} ipopt)
+# Link the Python3 interpreter and development components to the target
+target_link_libraries(mpc 
+    Python3::Python
+    Python3::Module
+)
+
+target_link_libraries(mpc 
+        Python3::NumPy
+    )

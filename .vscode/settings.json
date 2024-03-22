@@ -56,6 +56,13 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
-    }
+        "typeinfo": "cpp",
+        "condition_variable": "cpp",
+        "list": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "mutex": "cpp",
+        "core": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

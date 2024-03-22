@@ -127,6 +127,7 @@ mpc_EXTERNAL_OBJECTS =
 ../bin/mpc: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
 ../bin/mpc: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
 ../bin/mpc: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
+../bin/mpc: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 ../bin/mpc: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
 ../bin/mpc: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
 ../bin/mpc: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
