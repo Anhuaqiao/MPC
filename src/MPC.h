@@ -81,52 +81,58 @@ public:
 };
     typedef CPPAD_TESTVECTOR(CppAD::AD<double>) ADvector;
     void operator()(ADvector& fg, const ADvector& vars){
-        fg[0]=0;
-        for(int i = 0;i<nTu;i++){
-            fg[0] += Q*CppAD::pow(vars[delta_start+i],2);
-            fg[0] += Q*CppAD::pow(vars[a_start+i],2);
-        }
-        //for(int i = 0;i<nTu-1;i++){
-        //    fg[0] += Q*CppAD::pow(vars[delta_start+i+1]-vars[delta_start+i],2);
-        //    fg[0] += Q*CppAD::pow(vars[a_start+i+1]-vars[a_start+i],2);
-        //}
-        fg[1+xstart] = vars[xstart];
-        fg[1+ystart] = vars[ystart];
-        fg[1+yawstart] = vars[yawstart];
-        fg[1+vstart] = vars[vstart];
+    fg[0] = 0;
 
-        for(int i=0;i<nT;i++){
-            CppAD::AD<double> x1 = vars[xstart+i+1];
-            CppAD::AD<double> y1 = vars[ystart+i+1];
-            CppAD::AD<double> yaw1 = vars[yawstart+i+1];
-            CppAD::AD<double> v1 = vars[vstart+i+1];
+    for(int i=0; i<nTu-1; i++){
+      fg[0] +=  0.01 * CppAD::pow(vars[a_start+i], 2);
+      fg[0] += 0.01 * CppAD::pow(vars[delta_start+i], 2);
+    }
 
-            CppAD::AD<double> x0 = vars[xstart+i];
-            CppAD::AD<double> y0 = vars[ystart+i];
-            CppAD::AD<double> yaw0 = vars[yawstart+i];
-            CppAD::AD<double> v0 = vars[vstart+i];
-            CppAD::AD<double> delta;
-            CppAD::AD<double> a;
-            if(i>=nTu){
-                delta = vars[delta_start+nTu-1];
-                a = vars[a_start+nTu-1];
-            }else{
-                delta = vars[delta_start+i];
-                a = vars[a_start+i];
-            }
+    for(int i=0; i<nTu-2; i++){
+      fg[0] += 0.01 * CppAD::pow(vars[a_start+i+1] - vars[a_start+i], 2);
+      fg[0] += 1 * CppAD::pow(vars[delta_start+i+1] - vars[delta_start+i], 2);
+    }
 
+    // fix the initial state as a constraint
+    fg[1 + xstart] = vars[xstart];
+    fg[1 + ystart] = vars[ystart];
+    fg[1 + yawstart] = vars[yawstart];
+    fg[1 + vstart] = vars[vstart];
 
-            fg[2+xstart+i] = x1 - x0 + v0*CppAD::cos(yaw0)*DT;
-            fg[2+ystart+i] = y1 - y0 + v0*CppAD::sin(yaw0)*DT;
-            fg[2+yawstart+i] = yaw1 - yaw0 + v0*CppAD::tan(delta)/WB*DT;
-            fg[2+vstart+i] = v1 - v0+a*DT;
+    // fg[0] += CppAD::pow(traj_ref(0, 0) - vars[x_start], 2);
+    // fg[0] += CppAD::pow(traj_ref(1, 0) - vars[y_start], 2);
+    // fg[0] += 0.5 * CppAD::pow(traj_ref(2, 0) - vars[yaw_start], 2);
+    // fg[0] += 0.5 * CppAD::pow(traj_ref(3, 0) - vars[v_start], 2);
 
-            fg[0] += R*CppAD::pow(ref(0,i)-x1, 2);
-            fg[0] += R*CppAD::pow(ref(1,i)-y1, 2);
-            fg[0] += R*CppAD::pow(ref(2,i)-yaw1, 2);
-            fg[0] += R*CppAD::pow(ref(3,i)-v1, 2);
-        }
+    // The rest of the constraints
+    for (int i = 0; i < nT - 1; i++) {
+      // The state at time t+1 .
+      CppAD::AD<double> x1 = vars[xstart + i + 1];
+      CppAD::AD<double> y1 = vars[ystart + i + 1];
+      CppAD::AD<double> yaw1 = vars[yawstart + i + 1];
+      CppAD::AD<double> v1 = vars[vstart + i + 1];
 
+      // The state at time t.
+      CppAD::AD<double> x0 = vars[xstart + i];
+      CppAD::AD<double> y0 = vars[ystart + i];
+      CppAD::AD<double> yaw0 = vars[yawstart + i];
+      CppAD::AD<double> v0 = vars[vstart + i];
+
+      // Only consider the actuation at time t.
+      CppAD::AD<double> delta0 = vars[delta_start + i];
+      CppAD::AD<double> a0 = vars[a_start + i];
+
+      // constraint with the dynamic model
+      fg[2 + xstart + i] = x1 - (x0 + v0 * CppAD::cos(yaw0) * DT);
+      fg[2 + ystart + i] = y1 - (y0 + v0 * CppAD::sin(yaw0) * DT);
+      fg[2 + yawstart + i] = yaw1 - (yaw0 + v0 * CppAD::tan(delta0) / WB * DT);
+      fg[2 + vstart + i] = v1 - (v0 + a0 * DT); // fg[1...] are constraints g_i
+      // cost with the ref traj
+      fg[0] += CppAD::pow(ref(0, i) - (x0 + v0 * CppAD::cos(yaw0) * DT), 2);
+      fg[0] += CppAD::pow(ref(1, i) - (y0 + v0 * CppAD::sin(yaw0) * DT), 2);
+      fg[0] += CppAD::pow(ref(2, i) - (yaw0 + v0 * CppAD::tan(delta0) / WB * DT), 2);
+      fg[0] += CppAD::pow(ref(3, i) - (v0 + a0 * DT), 2); // fg[0] cost function value
+    }
         int tmp = 0;
         //for(const auto a:fg){
         //    std::cout<< "fg " << tmp << ": " << a << std::endl;
@@ -149,6 +155,9 @@ public:
     int a_start;
     double Q,R;
     int target_int;
+    Vec_d x_h;
+    Vec_d y_h;
+    Vec_d steer_out;
     MPC(void);
     MPC(int nT_, int nx_, int nu_,double Q_, double R_);
     void calc_ref(Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d speed_profile, Eigen::MatrixXd& ref);
@@ -338,12 +347,10 @@ void MPC::simulation(Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d speed_profi
     double goal_dist = 0.5;
     int iter_count=0;
     target_int=0;
-    Vec_d x_h;
-    Vec_d y_h;
-    Vec_d steer_out;
     Eigen::MatrixXd ref;
     double delta = 0;
     double a = 0;
+    std::vector<double> time_h,vel_h;//画图用
     while (1000>=iter_count)
     {
         calc_ref(state, cx, cy, cyaw, ck, speed_profile, this->target_int, ref);
@@ -362,16 +369,33 @@ void MPC::simulation(Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d speed_profi
         x_h.push_back(state.x);
         y_h.push_back(state.y);
         steer_out.push_back(steer);
+        time_h.push_back(iter_count);
+        vel_h.push_back(state.v);
+
+ // visualization
+        plt::cla();
+        plt::figure(1);
+        plt::plot(x_h,y_h,"ob");//实际轨迹
+        plt::plot(cx,cy,"-r");//参考轨迹
+        plt::plot({cx[target_int]}, {cy[target_int]}, "xg");//当前跟踪目标点
+        plt::plot({goal[0]}, {goal[1]}, "og");//终点
+
+        plt::xlabel("x[m]");
+        plt::ylabel("y[m]");
+
+        plt::axis("equal");
+        plt::grid(true);
+
+        plt::figure(2);
+        plt::plot(time_h,vel_h,"-g");
+        plt::xlabel("Time [s]");
+        plt::ylabel("Speed [kmh]");
+        plt::grid(true);
+
+        plt::pause(0.0001);
+
         iter_count++;
     }
-  // Set the size of output image to 1200x780 pixels
-    plt::figure_size(1200, 780);
-    // Plot line from given x and y data. Color is selected automatically.
-    plt::plot(x_h, y_h);
-    // Add graph title
-    plt::title("Route Path");
-    // Save the image (file format is determined by the extension)
-    plt::save("./vehicle-path.png");
 
 
 
