@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "cubic_spline_.h"
+#include "cubic_spline.h"
 #include "matplotlibcpp.h"
 #include <vector>
 #include <Eigen/Dense>
@@ -79,11 +80,11 @@ public:
     ref = ref_;
 };
     typedef CPPAD_TESTVECTOR(CppAD::AD<double>) ADvector;
-    void operator()(ADvector& fg, ADvector& vars){
+    void operator()(ADvector& fg, const ADvector& vars){
         fg[0]=0;
         for(int i = 0;i<nTu;i++){
             fg[0] += Q*CppAD::pow(vars[delta_start+i],2);
-            fg[0] += Q*CppAD::pow(vars[a_start],2);
+            fg[0] += Q*CppAD::pow(vars[a_start+i],2);
         }
         //for(int i = 0;i<nTu-1;i++){
         //    fg[0] += Q*CppAD::pow(vars[delta_start+i+1]-vars[delta_start+i],2);
@@ -115,22 +116,22 @@ public:
             }
 
 
-            fg[2+xstart+i] = x1 - x0 + v0*cos(yaw0)*DT;
-            fg[2+ystart+i] = y1 - y0 + v0*sin(yaw0)*DT;
-            fg[2+yawstart+i] = yaw1 - yaw0 + v0/WB*tan(delta)*DT;
+            fg[2+xstart+i] = x1 - x0 + v0*CppAD::cos(yaw0)*DT;
+            fg[2+ystart+i] = y1 - y0 + v0*CppAD::sin(yaw0)*DT;
+            fg[2+yawstart+i] = yaw1 - yaw0 + v0*CppAD::tan(delta)/WB*DT;
             fg[2+vstart+i] = v1 - v0+a*DT;
 
-            fg[0] += CppAD::pow(ref(0,i)-x1, 2);
-            fg[0] += CppAD::pow(ref(1,i)-y1, 2);
-            fg[0] += CppAD::pow(ref(2,i)-yaw1, 2);
-            fg[0] += CppAD::pow(ref(3,i)-v1, 2);
+            fg[0] += R*CppAD::pow(ref(0,i)-x1, 2);
+            fg[0] += R*CppAD::pow(ref(1,i)-y1, 2);
+            fg[0] += R*CppAD::pow(ref(2,i)-yaw1, 2);
+            fg[0] += R*CppAD::pow(ref(3,i)-v1, 2);
         }
 
         int tmp = 0;
-        for(const auto a:fg){
-            std::cout<< "fg " << tmp << ": " << a << std::endl;
-            tmp++;
-        }
+        //for(const auto a:fg){
+        //    std::cout<< "fg " << tmp << ": " << a << std::endl;
+        //    tmp++;
+        //}
     };
 };
 
@@ -173,9 +174,9 @@ Vec_d MPC::solve(State x0, double delta, double a, Eigen::MatrixXd RefPath){
     int nvar = 4*(nT+1)+2*nTu;
     int n_constraints = 4*(nT+1);
     Dvector var(nvar);
-    for(int i=0;i<nvar;i++){
-        var[i]=0;
-    }
+    // for(int i=0;i<nvar;i++){
+    //     var[i]=0;
+    // }
 
     //initial state
     var[xstart] = x0.x;
@@ -221,41 +222,42 @@ Vec_d MPC::solve(State x0, double delta, double a, Eigen::MatrixXd RefPath){
     gu[ystart] = x0.y;
     gu[yawstart] = x0.yaw;
     gu[vstart] = x0.v;
-    int tmp = 0;
-        for(const auto a:var){
-        std::cout<< "var " << tmp << ": " << a << std::endl;
-        tmp++;
-    }
-    tmp=0;
-    for(const auto a:varl){
-        std::cout<< "varl " << tmp << ": " << a << std::endl;
-        tmp++;
-    }
-    tmp=0;
-    for(const auto a:varu){
-        std::cout<< "varu"  << tmp << ": "  << a << std::endl;
-        tmp++;
-    }
-    tmp=0;
-    for(const auto a:gl){
-        std::cout<< "gl"  << tmp << ": "  << a << std::endl;
-        tmp++;
-    }
-    tmp=0;
-    for(const auto a:gu){
-        std::cout<< "gu"  << tmp << ": " << a << std::endl;
-        tmp++;
-    }
-
-
+    // int tmp = 0;
+    //     for(const auto a:var){
+    //     std::cout<< "var " << tmp << ": " << a << std::endl;
+    //     tmp++;
+    // }
+    // tmp=0;
+    // for(const auto a:varl){
+    //     std::cout<< "varl " << tmp << ": " << a << std::endl;
+    //     tmp++;
+    // }
+    // tmp=0;
+    // for(const auto a:varu){
+    //     std::cout<< "varu"  << tmp << ": "  << a << std::endl;
+    //     tmp++;
+    // }
+    // tmp=0;
+    // for(const auto a:gl){
+    //     std::cout<< "gl"  << tmp << ": "  << a << std::endl;
+    //     tmp++;
+    // }
+    // tmp=0;
+    // for(const auto a:gu){
+    //     std::cout<< "gu"  << tmp << ": " << a << std::endl;
+    //     tmp++;
+    // }
+// 
+// 
     FG_EVAL fg_eval(RefPath, nT, nx, nTu, Q, R, x0);
 
-    // options
     std::string options;
     options += "Integer print_level  0\n";
     // options += "Sparse  true        forward\n";
     options += "Sparse  true        reverse\n";
     options += "Integer max_iter      50\n";
+    // options += "Numeric tol          1e-6\n";
+    options += "Numeric max_cpu_time          0.05\n";
 
     CppAD::ipopt::solve_result<Dvector> solution;
 
@@ -274,18 +276,18 @@ Vec_d MPC::solve(State x0, double delta, double a, Eigen::MatrixXd RefPath){
 
 int MPC::calc_target_index(State state, Vec_d cx, Vec_d cy, int pind){
     double mind = std::numeric_limits<double>::max();
-    double ind = 0;
+    double ind_tmp = 0;
     for(int i=pind;i<pind+N_IND_SEARCH;i++){
-        double idx = cx[pind] - state.x;
-        double idy = cy[pind] - state.y;
+        double idx = cx[i] - state.x;
+        double idy = cy[i] - state.y;
         double d_e = idx*idx + idy*idy;
 
         if(d_e<mind){
             mind = d_e;
-            ind = i;
+            ind_tmp = i;
         }
     }
-    return ind;
+    return ind_tmp;
 
 };
 
@@ -294,14 +296,14 @@ void MPC::calc_ref(State state, Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d 
     ref.setZero();
 
     int ind = calc_target_index(state, cx, cy, target_int_);
-    target_int = ind;
+    this->target_int = ind;
     int ncourse = cx.size();
 
     float travel = 0.0;
 
     for(int i=0;i<nT;i++){
         travel += std::abs(state.v)*DT;
-        int dind = (int)std::round(travel/1);
+        int dind = (int)std::round(travel/1.0);
 
         if((ind+dind)<ncourse){
             ref(0,i) = cx[ind+dind];
@@ -338,27 +340,28 @@ void MPC::simulation(Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d speed_profi
     target_int=0;
     Vec_d x_h;
     Vec_d y_h;
-
+    Vec_d steer_out;
     Eigen::MatrixXd ref;
     double delta = 0;
     double a = 0;
-    while (5000>=iter_count)
+    while (1000>=iter_count)
     {
-        calc_ref(state, cx, cy, cyaw, ck, speed_profile, target_int, ref);
+        calc_ref(state, cx, cy, cyaw, ck, speed_profile, this->target_int, ref);
         std::cout << "ref matrix: " << ref<< std::endl;
         Vec_d output = solve(state, delta, a, ref);
         a = output[a_start];
         delta = output[delta_start];
         update(state, output[a_start], output[delta_start]);
-        float steer = output[delta_start];
-        float dx = state.x - goal[0];
-        float dy = state.y - goal[1];
+        double steer = output[delta_start];
+        double dx = state.x - goal[0];
+        double dy = state.y - goal[1];
         if (std::sqrt(dx*dx + dy*dy) <= goal_dist) {
         std::cout<<("Goal")<<std::endl;
         break;
         }
         x_h.push_back(state.x);
         y_h.push_back(state.y);
+        steer_out.push_back(steer);
         iter_count++;
     }
   // Set the size of output image to 1200x780 pixels

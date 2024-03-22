@@ -429,6 +429,95 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  ../include/cubic_spline.h \
+  /usr/local/include/eigen3/Eigen/Eigen \
+  /usr/local/include/eigen3/Eigen/Dense \
+  /usr/local/include/eigen3/Eigen/Sparse \
+  /usr/local/include/eigen3/Eigen/SparseCore \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseUtil.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h \
+  /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+  /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+  /usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseAssign.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/CompressedStorage.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/AmbiVector.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseCompressedBase.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseMap.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseVector.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseRef.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseTranspose.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseBlock.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseDot.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseRedux.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseView.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseProduct.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseTriangularView.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h \
+  /usr/local/include/eigen3/Eigen/OrderingMethods \
+  /usr/local/include/eigen3/Eigen/src/OrderingMethods/Amd.h \
+  /usr/local/include/eigen3/Eigen/src/OrderingMethods/Ordering.h \
+  /usr/local/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h \
+  /usr/local/include/eigen3/Eigen/SparseCholesky \
+  /usr/local/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h \
+  /usr/local/include/eigen3/Eigen/SparseLU \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h \
+  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h \
+  /usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU.h \
+  /usr/local/include/eigen3/Eigen/SparseQR \
+  /usr/local/include/eigen3/Eigen/src/SparseQR/SparseQR.h \
+  /usr/local/include/eigen3/Eigen/IterativeLinearSolvers \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
+  /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../include/cpprobotics_types.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
   ../include/matplotlibcpp.h \
   /usr/include/python3.10/Python.h \
   /usr/include/python3.10/patchlevel.h \
@@ -559,12 +648,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
   /usr/include/python3.10/cpython/fileutils.h \
   /usr/include/python3.10/cpython/pyfpe.h \
   /usr/include/python3.10/tracemalloc.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h \
@@ -639,7 +722,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/backward/auto_ptr.h \
@@ -677,8 +759,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
   /usr/include/c++/11/set \
   /usr/include/c++/11/bits/stl_set.h \
   /usr/include/c++/11/bits/stl_multiset.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/cppad/utility/sparse_rc.hpp \
   /usr/include/cppad/utility/sparse_rcv.hpp \
   /usr/include/cppad/utility/speed_test.hpp \
@@ -768,9 +848,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
   /usr/include/cppad/local/sparse/pack_setvec.hpp \
   /usr/include/cppad/local/sparse/list_setvec.hpp \
   /usr/include/cppad/local/sparse/svec_setvec.hpp \
-  /usr/include/c++/11/list \
-  /usr/include/c++/11/bits/stl_list.h \
-  /usr/include/c++/11/bits/list.tcc \
   /usr/include/cppad/core/atomic/two_ctor.hpp \
   /usr/include/cppad/core/atomic/two_option.hpp \
   /usr/include/cppad/core/atomic/two_afun.hpp \
@@ -997,8 +1074,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/cppad/core/bender_quad.hpp:
 
-/usr/include/cppad/core/graph/to_json.hpp:
-
 /usr/include/cppad/core/abs_normal_fun.hpp:
 
 /usr/include/cppad/local/optimize/record_csum.hpp:
@@ -1127,8 +1202,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/cppad/local/add_op.hpp:
 
-/usr/include/cppad/local/abs_op.hpp:
-
 /usr/include/cppad/core/std_math_11.hpp:
 
 /usr/include/cppad/local/cos_op.hpp:
@@ -1169,17 +1242,11 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/cppad/core/atomic/two_rev_sparse_hes.hpp:
 
-/usr/include/cppad/core/dependent.hpp:
-
-/usr/include/cppad/core/atomic/two_for_sparse_hes.hpp:
-
 /usr/include/cppad/core/atomic/two_forward.hpp:
 
 /usr/include/cppad/core/atomic/two_afun.hpp:
 
 /usr/include/cppad/core/atomic/two_ctor.hpp:
-
-/usr/include/c++/11/bits/stl_list.h:
 
 /usr/include/cppad/local/sparse/list_setvec.hpp:
 
@@ -1263,8 +1330,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/cppad/local/atom_state.hpp:
 
-/usr/include/cppad/local/play/random_setup.hpp:
-
 /usr/local/include/coin-or/IpTaggedObject.hpp:
 
 /usr/include/cppad/local/play/subgraph_iterator.hpp:
@@ -1309,8 +1374,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/cppad/local/utility/vector_bool.hpp:
 
-/usr/include/cppad/utility/vector_bool.hpp:
-
 /usr/local/include/coin-or/IpRegOptions.hpp:
 
 /usr/include/cppad/local/utility/cppad_vector_itr.hpp:
@@ -1318,8 +1381,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/cppad/utility/vector.hpp:
 
 /usr/include/cppad/utility/ode_gear.hpp:
-
-/usr/include/cppad/utility/ode_gear_control.hpp:
 
 /usr/include/cppad/core/mul_eq.hpp:
 
@@ -1485,23 +1546,9 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /home/xiaohan/.local/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h:
 
-/usr/include/cppad/local/record/put_dyn_atomic.hpp:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/usr/include/c++/11/bits/stl_map.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/c++/11/map:
-
 /usr/include/python3.10/tracemalloc.h:
 
 /usr/include/python3.10/cpython/pyfpe.h:
-
-/usr/include/python3.10/cpython/fileutils.h:
 
 /usr/include/python3.10/fileutils.h:
 
@@ -1517,6 +1564,150 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/python3.10/cpython/import.h:
 
+/usr/include/python3.10/import.h:
+
+/usr/include/python3.10/intrcheck.h:
+
+/usr/include/python3.10/sysmodule.h:
+
+/usr/include/python3.10/cpython/pylifecycle.h:
+
+/usr/include/cppad/local/record/comp_op.hpp:
+
+/usr/include/python3.10/pylifecycle.h:
+
+/usr/include/python3.10/cpython/pythonrun.h:
+
+/usr/include/cppad/local/expm1_op.hpp:
+
+/usr/include/cppad/utility/lu_factor.hpp:
+
+/usr/include/python3.10/cpython/compile.h:
+
+/usr/include/cppad/local/cond_op.hpp:
+
+/usr/include/python3.10/context.h:
+
+/usr/include/cppad/core/jacobian.hpp:
+
+/usr/include/python3.10/pythread.h:
+
+/usr/include/python3.10/cpython/pyerrors.h:
+
+/usr/include/python3.10/pyerrors.h:
+
+/usr/include/cppad/core/chkpoint_two/chkpoint_two.hpp:
+
+/usr/include/python3.10/codecs.h:
+
+/usr/include/python3.10/cpython/picklebufobject.h:
+
+/usr/include/cppad/core/graph/graph_op_enum.hpp:
+
+/usr/include/python3.10/namespaceobject.h:
+
+/usr/include/cppad/local/play/random_iterator.hpp:
+
+/usr/include/python3.10/structseq.h:
+
+/usr/include/python3.10/weakrefobject.h:
+
+/usr/include/c++/11/numeric:
+
+/usr/include/python3.10/warnings.h:
+
+/usr/include/cppad/local/sweep/forward0.hpp:
+
+/usr/include/python3.10/genericaliasobject.h:
+
+/usr/include/python3.10/abstract.h:
+
+/usr/include/python3.10/cpython/pystate.h:
+
+/usr/include/cppad/local/optimize/size_pair.hpp:
+
+/usr/include/python3.10/pystate.h:
+
+/usr/include/python3.10/genobject.h:
+
+/usr/include/python3.10/iterobject.h:
+
+/usr/include/cppad/core/graph/to_graph.hpp:
+
+/usr/include/python3.10/cellobject.h:
+
+/usr/include/python3.10/traceback.h:
+
+/usr/include/python3.10/pyframe.h:
+
+/usr/include/python3.10/cpython/code.h:
+
+/usr/include/cppad/core/atomic/two_rev_depend.hpp:
+
+/usr/include/python3.10/cpython/fileobject.h:
+
+/usr/include/c++/11/bits/align.h:
+
+/usr/include/python3.10/descrobject.h:
+
+/usr/include/python3.10/moduleobject.h:
+
+/usr/include/python3.10/methodobject.h:
+
+/usr/include/cppad/core/sign.hpp:
+
+/usr/include/python3.10/cpython/odictobject.h:
+
+/usr/include/python3.10/cpython/dictobject.h:
+
+/usr/include/cppad/local/sparse/internal.hpp:
+
+/usr/include/python3.10/listobject.h:
+
+/usr/include/python3.10/cpython/tupleobject.h:
+
+/usr/include/python3.10/tupleobject.h:
+
+/usr/include/python3.10/memoryobject.h:
+
+/usr/include/python3.10/complexobject.h:
+
+/usr/include/cppad/core/cppad_assert.hpp:
+
+/usr/include/python3.10/floatobject.h:
+
+/usr/include/python3.10/boolobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/python3.10/longintrepr.h:
+
+/usr/include/python3.10/longobject.h:
+
+/usr/include/cppad/local/exp_op.hpp:
+
+/usr/include/python3.10/unicodeobject.h:
+
+/usr/include/python3.10/cpython/bytesobject.h:
+
+/usr/include/python3.10/cpython/bytearrayobject.h:
+
+/usr/include/python3.10/pyhash.h:
+
+/usr/include/python3.10/cpython/object.h:
+
+/usr/include/python3.10/enumobject.h:
+
+/usr/include/python3.10/object.h:
+
+/usr/include/python3.10/cpython/pymem.h:
+
+/usr/include/python3.10/pymath.h:
+
+/usr/include/cppad/core/rev_hes_sparsity.hpp:
+
+/usr/include/python3.10/exports.h:
+
 /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h:
@@ -1525,15 +1716,7 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/cppad/local/exp_op.hpp:
-
-/usr/include/python3.10/unicodeobject.h:
-
-/usr/include/string.h:
-
 /usr/local/include/eigen3/Eigen/src/Core/StlIterators.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h:
 
 /usr/include/c++/11/bits/stl_heap.h:
 
@@ -1545,13 +1728,17 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/usr/include/python3.10/complexobject.h:
-
-/usr/include/python3.10/abstract.h:
-
 /usr/include/c++/11/limits:
 
-/usr/include/c++/11/cstring:
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/python3.10/cpython/ceval.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h:
 
 /usr/include/c++/11/bits/refwrap.h:
 
@@ -1567,9 +1754,15 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/bits/sstream.tcc:
 
+/usr/include/python3.10/pymacro.h:
+
+/usr/local/include/eigen3/Eigen/src/SVD/BDCSVD.h:
+
 /usr/include/c++/11/array:
 
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/usr/local/include/eigen3/Eigen/IterativeLinearSolvers:
 
 /usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h:
 
@@ -1579,11 +1772,9 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
 
-/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
-/usr/include/python3.10/genobject.h:
+/usr/include/c++/11/bits/stl_list.h:
 
 /usr/include/cppad/local/optimize/usage.hpp:
 
@@ -1609,10 +1800,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/debug/debug.h:
 
-/usr/include/cppad/core/optimize.hpp:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
 /usr/local/include/coin-or/IpNLP.hpp:
 
 /usr/include/limits.h:
@@ -1637,25 +1824,25 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+/usr/include/python3.10/ceval.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
 
 ../include/cubic_spline_.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/usr/include/python3.10/cpython/object.h:
-
 /usr/include/cppad/core/base_float.hpp:
 
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseRef.h:
+
 /usr/include/c++/11/istream:
+
+/usr/local/include/eigen3/Eigen/src/OrderingMethods/Ordering.h:
 
 /usr/include/cppad/local/play/sequential_iterator.hpp:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/cppad/local/play/random_iterator.hpp:
-
-/usr/include/python3.10/structseq.h:
 
 /usr/include/c++/11/bits/locale_conv.h:
 
@@ -1664,10 +1851,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/local/include/coin-or/IpTNLP.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
-
-/usr/include/cppad/local/sparse/internal.hpp:
-
-/usr/include/python3.10/listobject.h:
 
 /usr/include/cppad/local/optimize/get_cexp_info.hpp:
 
@@ -1689,8 +1872,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
 /usr/include/c++/11/bits/locale_facets.h:
 
 /usr/include/c++/11/bits/exception.h:
@@ -1700,8 +1881,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/include/python3.10/cpython/pymem.h:
 
 /usr/include/c++/11/stdexcept:
 
@@ -1725,17 +1904,11 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/cstddef:
 
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/python3.10/ceval.h:
-
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/cppad/utility/runge_45.hpp:
+/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
 
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
+/usr/local/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
@@ -1783,7 +1956,9 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/stdio.h:
+/usr/include/cppad/local/play/random_setup.hpp:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h:
 
 /usr/include/cppad/core/atomic/three_ctor.hpp:
 
@@ -1797,23 +1972,19 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/python3.10/dictobject.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/local/include/eigen3/Eigen/src/SVD/BDCSVD.h:
-
-/usr/include/python3.10/pymacro.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
-/usr/include/c++/11/backward/auto_ptr.h:
+/usr/include/cppad/local/record/put_dyn_atomic.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/python3.10/cpython/ceval.h:
+/usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/cppad/core/atomic/two_option.hpp:
 
@@ -1821,15 +1992,15 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/cppad/utility/runge_45.hpp:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/local/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
-
-/usr/include/cppad/core/graph/graph_op_enum.hpp:
-
-/usr/include/python3.10/namespaceobject.h:
 
 /usr/include/cppad/core/base_std_math.hpp:
 
@@ -1841,7 +2012,9 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/streambuf:
 
-/usr/include/python3.10/cpython/pystate.h:
+/usr/include/python3.10/pythonrun.h:
+
+/usr/include/c++/11/bits/concept_check.h:
 
 /usr/include/asm-generic/types.h:
 
@@ -1851,27 +2024,21 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/bits/functexcept.h:
 
-/usr/include/c++/11/bits/list.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
 /usr/local/include/eigen3/Eigen/src/Core/Dot.h:
-
-/usr/include/c++/11/numeric:
-
-/usr/include/python3.10/warnings.h:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/python3.10/longintrepr.h:
-
 /usr/include/c++/11/typeinfo:
 
-/usr/include/python3.10/cpython/tupleobject.h:
+/usr/include/python3.10/pymem.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/python3.10/cpython/traceback.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -1889,9 +2056,9 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/c++/11/bits/allocated_ptr.h:
+/usr/include/python3.10/cpython/unicodeobject.h:
 
-/usr/include/assert.h:
+/usr/include/c++/11/iterator:
 
 /usr/include/c++/11/cstdlib:
 
@@ -1915,8 +2082,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
 
-/usr/include/c++/11/bits/stl_algobase.h:
-
 /usr/include/cppad/local/optimize/get_par_usage.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Core/util/Meta.h:
@@ -1933,11 +2098,11 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/python3.10/traceback.h:
-
 /usr/local/include/coin-or/IpCachedResults.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -1947,8 +2112,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
 
-/usr/include/python3.10/pyhash.h:
-
 /usr/include/cppad/local/sparse/unary_op.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -1956,6 +2119,8 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
 
 /usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
@@ -1971,6 +2136,10 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
+/usr/include/python3.10/cpython/pytime.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/cppad/local/optimize/record_vp.hpp:
@@ -1981,7 +2150,13 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/linux/errno.h:
 
-/usr/include/python3.10/import.h:
+/usr/local/include/coin-or/IpVector.hpp:
+
+/usr/include/cppad/core/compound_assign.hpp:
+
+/usr/include/python3.10/typeslots.h:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/11/bits/allocator.h:
 
@@ -1998,8 +2173,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/c++/11/type_traits:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -2021,19 +2194,11 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/c++/11/list:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
-
 /usr/include/cppad/local/sweep/for_hes.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/python3.10/iterobject.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -2107,8 +2272,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/bits/invoke.h:
 
-/usr/include/python3.10/pymath.h:
-
 /usr/local/include/eigen3/Eigen/Core:
 
 /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
@@ -2116,12 +2279,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/python3.10/enumobject.h:
-
-/usr/include/python3.10/object.h:
-
-/usr/include/python3.10/cpython/bytearrayobject.h:
 
 /usr/include/c++/11/exception:
 
@@ -2133,17 +2290,25 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/tuple:
 
+/usr/include/stdio.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h:
+
 /usr/include/cppad/core/atomic/three_afun.hpp:
 
 /usr/include/c++/11/backward/binders.h:
 
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/MapBase.h:
+
+/usr/include/string.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h:
 
@@ -2165,15 +2330,7 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
-/usr/include/cppad/core/jacobian.hpp:
-
-/usr/include/python3.10/pythread.h:
-
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/cctype:
 
@@ -2190,6 +2347,8 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseView.h:
 
 /usr/include/c++/11/bits/ios_base.h:
 
@@ -2247,10 +2406,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/python3.10/pycapsule.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
-
 /usr/include/strings.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
@@ -2261,11 +2416,7 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/python3.10/boolobject.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/python3.10/cpython/picklebufobject.h:
 
 /usr/include/c++/11/bits/locale_classes.h:
 
@@ -2291,15 +2442,35 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
 
+/usr/include/c++/11/bits/stl_multimap.h:
+
 /usr/include/c++/11/set:
 
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/cppad/local/ad_tape.hpp:
+
+/usr/include/cppad/core/test_vector.hpp:
+
+/usr/include/cppad/core/base_to_string.hpp:
+
+/usr/include/python3.10/cpython/sysmodule.h:
+
+/usr/include/python3.10/cpython/abstract.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/c++/11/bits/algorithmfwd.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
+/usr/include/cppad/core/graph/to_json.hpp:
+
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h:
 
 /usr/include/cppad/local/std_set.hpp:
 
@@ -2319,7 +2490,11 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
 
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseDot.h:
+
 /usr/local/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
+
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
 
@@ -2334,8 +2509,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/c++/11/cwchar:
 
 /usr/local/include/eigen3/Eigen/src/Geometry/Scaling.h:
-
-/usr/include/python3.10/methodobject.h:
 
 /usr/local/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
 
@@ -2364,8 +2537,6 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/local/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/Assign.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h:
 
 /usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
@@ -2399,6 +2570,8 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/Matrix.h:
 
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h:
+
 /usr/local/include/eigen3/Eigen/src/Core/Array.h:
 
 /usr/include/cppad/local/atanh_op.hpp:
@@ -2413,35 +2586,29 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
 
-/usr/include/python3.10/cpython/bytesobject.h:
-
 /usr/local/include/eigen3/Eigen/src/Core/StableNorm.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/Stride.h:
 
-/usr/include/cppad/local/record/comp_op.hpp:
+/usr/include/cppad/utility/ode_gear_control.hpp:
 
-/usr/include/python3.10/pylifecycle.h:
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h:
 
-/usr/include/c++/11/bits/stream_iterator.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
-/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+/usr/local/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
-/usr/local/include/eigen3/Eigen/src/Core/Map.h:
+/usr/include/c++/11/list:
 
 /usr/include/c++/11/cstdio:
 
 /usr/local/include/eigen3/Eigen/src/Core/Ref.h:
 
-/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h:
-
 /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/Block.h:
-
-/usr/include/python3.10/cpython/dictobject.h:
 
 /usr/include/cppad/core/subgraph_sparsity.hpp:
 
@@ -2461,11 +2628,13 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/Transpose.h:
 
+/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/CompressedStorage.h:
+
 /usr/include/python3.10/cpython/initconfig.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
-
-/usr/include/python3.10/Python.h:
 
 /usr/include/cppad/local/graph/cpp_graph_itr.hpp:
 
@@ -2475,13 +2644,29 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/Redux.h:
 
+/usr/include/python3.10/classobject.h:
+
+/usr/include/python3.10/bytesobject.h:
+
+/usr/local/include/eigen3/Eigen/SparseCore:
+
 /usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/Swap.h:
 
+/usr/include/python3.10/cpython/objimpl.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseMap.h:
+
 /usr/include/cppad/core/hessian.hpp:
+
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h:
 
@@ -2495,11 +2680,19 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
 
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h:
+
 /usr/local/include/eigen3/Eigen/src/Core/Transpositions.h:
+
+/usr/include/cppad/local/abs_op.hpp:
+
+../include/cpprobotics_types.h:
 
 /usr/include/cppad/utility/pow_int.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
+/usr/local/include/eigen3/Eigen/SparseQR:
 
 /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
 
@@ -2511,6 +2704,8 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/cppad/local/record/put_var_atomic.hpp:
 
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:
+
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
@@ -2519,11 +2714,25 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
+/usr/include/python3.10/rangeobject.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
 /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h:
 
 /usr/include/cppad/utility/ode_err_control.hpp:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h:
 
 /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
 
@@ -2575,15 +2784,15 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/misc/Kernel.h:
 
-/usr/include/python3.10/bytesobject.h:
-
-/usr/include/python3.10/classobject.h:
-
-/usr/include/python3.10/pyframe.h:
-
 /usr/local/include/eigen3/Eigen/src/misc/Image.h:
 
 /usr/local/include/eigen3/Eigen/src/LU/PartialPivLU.h:
+
+/usr/include/cppad/core/optimize.hpp:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h:
 
 /usr/local/include/eigen3/Eigen/src/LU/Determinant.h:
 
@@ -2591,13 +2800,33 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/python3.10/patchlevel.h:
 
+/usr/include/cppad/core/omp_max_thread.hpp:
+
+/usr/include/python3.10/cpython/listobject.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/11/system_error:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/local/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+
 /usr/local/include/eigen3/Eigen/Cholesky:
+
+/usr/include/c++/11/bits/range_access.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h:
 
 /usr/local/include/eigen3/Eigen/Jacobi:
 
-/usr/include/cppad/local/optimize/size_pair.hpp:
+/usr/include/cppad/local/play/addr_enum.hpp:
 
-/usr/include/python3.10/pystate.h:
+/usr/include/python3.10/code.h:
+
+/usr/local/include/eigen3/Eigen/src/Householder/Householder.h:
 
 /usr/local/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
 
@@ -2605,9 +2834,13 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/QR/HouseholderQR.h:
 
-/usr/local/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseUtil.h:
 
-/usr/local/include/eigen3/Eigen/src/SVD/SVDBase.h:
+/usr/include/assert.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
+
+/usr/local/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
 
 /usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
@@ -2615,17 +2848,23 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/Geometry:
 
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/AmbiVector.h:
+
 /usr/local/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/Map.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
 /usr/local/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
 
 /usr/local/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
-
-/usr/include/cppad/local/cond_op.hpp:
-
-/usr/include/python3.10/context.h:
 
 /usr/include/cppad/local/div_op.hpp:
 
@@ -2636,6 +2875,8 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/cppad/core/fun_eval.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:
+
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
@@ -2659,6 +2900,8 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
 
+/usr/include/c++/11/map:
+
 /usr/include/cppad/core/cond_exp.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
@@ -2669,19 +2912,15 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/cppad/core/ad.hpp:
 
+/usr/include/python3.10/objimpl.h:
+
 /usr/local/include/eigen3/Eigen/Householder:
 
 /usr/local/include/eigen3/Eigen/src/Core/NestByValue.h:
 
-/usr/include/python3.10/objimpl.h:
-
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
-
-/usr/include/cppad/core/graph/to_graph.hpp:
-
-/usr/include/python3.10/cellobject.h:
 
 /usr/include/cppad/core/drivers.hpp:
 
@@ -2700,6 +2939,132 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 /usr/include/cppad/core/rev_two.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+../include/cubic_spline.h:
+
+/usr/local/include/eigen3/Eigen/src/SVD/SVDBase.h:
+
+/usr/local/include/eigen3/Eigen/Eigen:
+
+/usr/local/include/eigen3/Eigen/Sparse:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseProduct.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+/usr/include/cppad/core/dependent.hpp:
+
+/usr/include/cppad/core/atomic/two_for_sparse_hes.hpp:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseAssign.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseCompressedBase.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseVector.h:
+
+/usr/include/c++/11/cstring:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseTranspose.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseBlock.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseRedux.h:
+
+/usr/include/python3.10/cpython/fileutils.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/python3.10/pycapsule.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseTriangularView.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h:
+
+/usr/include/python3.10/Python.h:
+
+/usr/local/include/eigen3/Eigen/OrderingMethods:
+
+/usr/include/cppad/core/tape_link.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/local/include/eigen3/Eigen/src/OrderingMethods/Amd.h:
+
+/usr/local/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h:
+
+/usr/local/include/eigen3/Eigen/SparseCholesky:
+
+/usr/local/include/eigen3/Eigen/SparseLU:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseQR/SparseQR.h:
+
+/usr/include/cppad/utility/vector_bool.hpp:
+
+/usr/local/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h:
+
+/usr/include/python3.10/compile.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h:
+
+/usr/include/python3.10/modsupport.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/local/include/eigen3/Eigen/src/SparseLU/SparseLU.h:
+
+/usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/usr/include/c++/11/bits/list.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
@@ -2737,162 +3102,16 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp \
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
-/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+/usr/include/signal.h:
 
-/usr/include/x86_64-linux-gnu/sys/stat.h:
+/usr/include/python3.10/cpython/pydebug.h:
 
-/usr/include/cppad/core/tape_link.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/linux/stat.h:
 
 /usr/include/linux/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/cppad/core/rev_hes_sparsity.hpp:
-
-/usr/include/python3.10/exports.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
-
-/usr/include/python3.10/pymem.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h:
-
-/usr/include/python3.10/cpython/objimpl.h:
-
-/usr/include/python3.10/cpython/pythonrun.h:
-
-/usr/local/include/coin-or/IpVector.hpp:
-
-/usr/include/cppad/core/compound_assign.hpp:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/python3.10/typeslots.h:
-
-/usr/include/cppad/local/ad_tape.hpp:
-
-/usr/include/cppad/core/test_vector.hpp:
-
-/usr/include/cppad/core/base_to_string.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/python3.10/cpython/sysmodule.h:
-
-/usr/include/python3.10/cpython/abstract.h:
-
-/usr/include/signal.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
-/usr/include/python3.10/cpython/pydebug.h:
-
-/usr/include/cppad/core/atomic/two_rev_depend.hpp:
-
-/usr/include/python3.10/cpython/fileobject.h:
-
-/usr/include/c++/11/iterator:
-
-/usr/include/python3.10/cpython/unicodeobject.h:
-
-/usr/include/python3.10/longobject.h:
-
-/usr/include/cppad/core/cppad_assert.hpp:
-
-/usr/include/python3.10/floatobject.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/python3.10/pythonrun.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
-
-/usr/include/python3.10/rangeobject.h:
-
-/usr/include/python3.10/memoryobject.h:
-
-/usr/include/python3.10/tupleobject.h:
-
-/usr/include/cppad/core/omp_max_thread.hpp:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/11/system_error:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/local/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
-
-/usr/include/python3.10/cpython/listobject.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h:
-
-/usr/include/python3.10/dictobject.h:
-
-/usr/include/cppad/core/sign.hpp:
-
-/usr/include/python3.10/cpython/odictobject.h:
-
-/usr/include/cppad/local/play/addr_enum.hpp:
-
-/usr/local/include/eigen3/Eigen/src/Householder/Householder.h:
-
-/usr/include/python3.10/code.h:
-
-/usr/include/python3.10/cpython/code.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/python3.10/cpython/traceback.h:
-
-/usr/include/c++/11/bits/align.h:
-
-/usr/include/python3.10/moduleobject.h:
-
-/usr/include/python3.10/descrobject.h:
-
-/usr/include/cppad/local/sweep/forward0.hpp:
-
-/usr/include/python3.10/genericaliasobject.h:
-
-/usr/include/python3.10/weakrefobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/python3.10/cpython/pytime.h:
-
-/usr/include/cppad/core/chkpoint_two/chkpoint_two.hpp:
-
-/usr/include/python3.10/codecs.h:
-
-/usr/include/python3.10/pyerrors.h:
-
-/usr/include/python3.10/cpython/pyerrors.h:
-
-/usr/include/python3.10/modsupport.h:
-
-/usr/include/python3.10/compile.h:
-
-/usr/include/cppad/local/expm1_op.hpp:
-
-/usr/include/cppad/utility/lu_factor.hpp:
-
-/usr/include/python3.10/cpython/compile.h:
-
-/usr/include/python3.10/cpython/pylifecycle.h:
-
-/usr/include/python3.10/sysmodule.h:
-
-/usr/include/python3.10/intrcheck.h:
