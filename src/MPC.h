@@ -57,6 +57,21 @@ T PI2PI(T angle){
     return angle;
 };
 
+void smooth_yaw(Vec_d& cyaw){
+  for(unsigned int i=0; i<cyaw.size()-1; i++){
+    float dyaw = cyaw[i+1] - cyaw[i];
+
+    while (dyaw > M_PI){
+      cyaw[i+1] -= M_PI*2.0;
+      dyaw = cyaw[i+1] - cyaw[i];
+    }
+    while (dyaw < -M_PI){
+      cyaw[i+1] += M_PI*2.0;
+      dyaw = cyaw[i+1] - cyaw[i];
+    }
+  }
+};
+
 class FG_EVAL{
 public:
     Eigen::MatrixXd ref;
@@ -81,58 +96,51 @@ public:
 };
     typedef CPPAD_TESTVECTOR(CppAD::AD<double>) ADvector;
     void operator()(ADvector& fg, const ADvector& vars){
-    fg[0] = 0;
+ fg[0]=0;
+        for(int i = 0;i<nTu;i++){
+            fg[0] += Q*CppAD::pow(vars[delta_start+i],2);
+            fg[0] += Q*CppAD::pow(vars[a_start+i],2);
+        }
+        //for(int i = 0;i<nTu-1;i++){
+        //    fg[0] += Q*CppAD::pow(vars[delta_start+i+1]-vars[delta_start+i],2);
+        //    fg[0] += Q*CppAD::pow(vars[a_start+i+1]-vars[a_start+i],2);
+        //}
+        fg[1+xstart] = vars[xstart];
+        fg[1+ystart] = vars[ystart];
+        fg[1+yawstart] = vars[yawstart];
+        fg[1+vstart] = vars[vstart];
 
-    for(int i=0; i<nTu-1; i++){
-      fg[0] +=  0.01 * CppAD::pow(vars[a_start+i], 2);
-      fg[0] += 0.01 * CppAD::pow(vars[delta_start+i], 2);
-    }
+        for(int i=0;i<nT;i++){
+            CppAD::AD<double> x1 = vars[xstart+i+1];
+            CppAD::AD<double> y1 = vars[ystart+i+1];
+            CppAD::AD<double> yaw1 = vars[yawstart+i+1];
+            CppAD::AD<double> v1 = vars[vstart+i+1];
 
-    for(int i=0; i<nTu-2; i++){
-      fg[0] += 0.01 * CppAD::pow(vars[a_start+i+1] - vars[a_start+i], 2);
-      fg[0] += 1 * CppAD::pow(vars[delta_start+i+1] - vars[delta_start+i], 2);
-    }
+            CppAD::AD<double> x0 = vars[xstart+i];
+            CppAD::AD<double> y0 = vars[ystart+i];
+            CppAD::AD<double> yaw0 = vars[yawstart+i];
+            CppAD::AD<double> v0 = vars[vstart+i];
+            CppAD::AD<double> delta;
+            CppAD::AD<double> a;
+            if(i>=nTu){
+                delta = vars[delta_start+nTu-1];
+                a = vars[a_start+nTu-1];
+            }else{
+                delta = vars[delta_start+i];
+                a = vars[a_start+i];
+            }
 
-    // fix the initial state as a constraint
-    fg[1 + xstart] = vars[xstart];
-    fg[1 + ystart] = vars[ystart];
-    fg[1 + yawstart] = vars[yawstart];
-    fg[1 + vstart] = vars[vstart];
 
-    // fg[0] += CppAD::pow(traj_ref(0, 0) - vars[x_start], 2);
-    // fg[0] += CppAD::pow(traj_ref(1, 0) - vars[y_start], 2);
-    // fg[0] += 0.5 * CppAD::pow(traj_ref(2, 0) - vars[yaw_start], 2);
-    // fg[0] += 0.5 * CppAD::pow(traj_ref(3, 0) - vars[v_start], 2);
+            fg[2+xstart+i] = x1 - (x0 + v0*CppAD::cos(yaw0)*DT);
+            fg[2+ystart+i] = y1 - (y0 + v0*CppAD::sin(yaw0)*DT);
+            fg[2+yawstart+i] = yaw1 - (yaw0 + v0*CppAD::tan(delta)/WB*DT);
+            fg[2+vstart+i] = v1 - (v0+a*DT);
 
-    // The rest of the constraints
-    for (int i = 0; i < nT - 1; i++) {
-      // The state at time t+1 .
-      CppAD::AD<double> x1 = vars[xstart + i + 1];
-      CppAD::AD<double> y1 = vars[ystart + i + 1];
-      CppAD::AD<double> yaw1 = vars[yawstart + i + 1];
-      CppAD::AD<double> v1 = vars[vstart + i + 1];
-
-      // The state at time t.
-      CppAD::AD<double> x0 = vars[xstart + i];
-      CppAD::AD<double> y0 = vars[ystart + i];
-      CppAD::AD<double> yaw0 = vars[yawstart + i];
-      CppAD::AD<double> v0 = vars[vstart + i];
-
-      // Only consider the actuation at time t.
-      CppAD::AD<double> delta0 = vars[delta_start + i];
-      CppAD::AD<double> a0 = vars[a_start + i];
-
-      // constraint with the dynamic model
-      fg[2 + xstart + i] = x1 - (x0 + v0 * CppAD::cos(yaw0) * DT);
-      fg[2 + ystart + i] = y1 - (y0 + v0 * CppAD::sin(yaw0) * DT);
-      fg[2 + yawstart + i] = yaw1 - (yaw0 + v0 * CppAD::tan(delta0) / WB * DT);
-      fg[2 + vstart + i] = v1 - (v0 + a0 * DT); // fg[1...] are constraints g_i
-      // cost with the ref traj
-      fg[0] += CppAD::pow(ref(0, i) - (x0 + v0 * CppAD::cos(yaw0) * DT), 2);
-      fg[0] += CppAD::pow(ref(1, i) - (y0 + v0 * CppAD::sin(yaw0) * DT), 2);
-      fg[0] += CppAD::pow(ref(2, i) - (yaw0 + v0 * CppAD::tan(delta0) / WB * DT), 2);
-      fg[0] += CppAD::pow(ref(3, i) - (v0 + a0 * DT), 2); // fg[0] cost function value
-    }
+            fg[0] += R*CppAD::pow(ref(0,i)-x1, 2);
+            fg[0] += R*CppAD::pow(ref(1,i)-y1, 2);
+            fg[0] += R*CppAD::pow(ref(2,i)-yaw1, 2);
+            fg[0] += R*CppAD::pow(ref(3,i)-v1, 2);
+        }
         int tmp = 0;
         //for(const auto a:fg){
         //    std::cout<< "fg " << tmp << ": " << a << std::endl;
@@ -343,6 +351,7 @@ void MPC::update(State& state, float a, float delta){
 };
 
 void MPC::simulation(Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d speed_profile, Poi_d goal){
+    smooth_yaw(cyaw);
     State state(cx[0],cy[0],cyaw[0],speed_profile[0]);
     double goal_dist = 0.5;
     int iter_count=0;
@@ -382,6 +391,9 @@ void MPC::simulation(Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d speed_profi
 
         plt::xlabel("x[m]");
         plt::ylabel("y[m]");
+
+
+        plt::pause(0.0001);
 
         plt::axis("equal");
         plt::grid(true);
