@@ -353,7 +353,7 @@ void MPC::update(State& state, float a, float delta){
 void MPC::simulation(Vec_d cx, Vec_d cy, Vec_d cyaw, Vec_d ck, Vec_d speed_profile, Poi_d goal){
     smooth_yaw(cyaw);
     State state(cx[0],cy[0],cyaw[0],speed_profile[0]);
-    double goal_dist = 0.5;
+    double goal_dist = 1.5;
     int iter_count=0;
     target_int=0;
     Eigen::MatrixXd ref;

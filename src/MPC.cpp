@@ -1,10 +1,11 @@
 #include "MPC.h"
 
 int main(){
-    Vec_d wx({0.0, 60.0, 125.0,  50.0,   75.0,  35.0,  -10.0});
+  // Vec_d wx({0.0, 60.0, 125.0,  50.0,   75.0,  35.0,  -10.0});
   // Vec_f wy({0.0,  4.0,  -4.0,  4.0,  -4.0,   4.0,  0.0});
-  Vec_d wy({0.0,  0.0,  50.0,  65.0,   30.0,  50.0,  -20.0});
-
+  // Vec_d wy({0.0,  0.0,  50.0,  65.0,   30.0,  50.0,  -20.0});
+  Vec_d wx({0.0, -10.0, -20.0, -40.0, -50.0, -60.0, -70.0});
+  Vec_d wy({0.0, -1.0, 1.0, 0.0, -1.0, 1.0, 0.0});
   cubic_spline_2D csp_obj(wx, wy);
   Vec_d r_x;
   Vec_d r_y;
@@ -29,4 +30,10 @@ int main(){
     MPC mpc = MPC(nT,nx,nTu,Q,R);
 
     mpc.simulation(r_x, r_y, ryaw, rcurvature, speed_profile, {{wx.back(), wy.back()}});
+        // save figure
+    const char* filename = "./mpc_demo.png";
+    std::cout << "Saving result to " << filename << std::endl;
+    plt::save(filename);
+    plt::show();
+    return 0;
 } 
